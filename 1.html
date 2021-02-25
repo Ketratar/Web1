@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+    <title>Лабораторная 1</title>
+</head>
+
+
+<body class="txt">
+	<p class="head">Генератор собак</p>
+	<div>Запрос с поиском или рандом? <br>
+		<input onchange="changething()" type="radio" name="type" value="search" checked>С поиском<Br>
+        <input onchange="changething()" type="radio" name="type" value="random">Рандомно<Br>
+	</div>
+	<div id="txt">Введите породы собаки (на английском): 
+		<input type="text" id="txt2"> <label>Например: terrier, labrador, bulldog<br>
+	</div>
+	<div>
+		<label id="txt3" hidden="true">Кол-во выводимых картинок: </label><label id="number" hidden="true">1</label>
+		<input hidden="true" onchange="changething2()" id="poloska" type="range" min="1" max="5" step="1" value="1"> <br>
+		<input type="submit" id="btn" value="Поиск"></button>
+	</div>
+	<div id='pics'></div>
+</body>
+	<script src="./1.js"></script>
+</html>
